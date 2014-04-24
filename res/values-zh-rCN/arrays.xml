@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="tabswitcher">
+        <item>查看手机内存</item>
+        <item>查看存储卡</item>
+    </string-array>
+</resources>

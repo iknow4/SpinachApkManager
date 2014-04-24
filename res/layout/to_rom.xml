@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:background="@drawable/mainscreen_bg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:gravity="center_vertical" 
+            android:orientation="horizontal" 
+            android:id="@id/app_manager_app" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+             android:background="@drawable/title_bar_bg">
+            <Button 
+                android:id="@id/first_button" 
+                android:layout_width="80.0dip" 
+                android:layout_height="match_parent" 
+                android:text="@string/move_to_sdcard"  
+                
+                style="@style/btn_green" />
+            <TextView android:textSize="16.0sp" 
+                android:textColor="@color/white" 
+                android:layout_width="wrap_content" 
+                android:layout_height="match_parent" 
+               
+                android:text="@string/select_all_text" />
+            <CheckBox android:id="@id/btn_do_select_all" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:button="@drawable/selector_checkbox" />
+            <ImageView
+                 android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/applogo"
+                />
+    </LinearLayout>
+    <TextView 
+        android:visibility="gone" 
+        android:id="@id/show_detail_counter" 
+        style="@style/activity_divider" />
+    <ListView 
+        android:id="@id/phone_list" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:listSelector="@drawable/list_line_pressed" 
+        android:layout_weight="1.0" 
+        style="@style/listview" />
+    <TextView 
+        android:textSize="18.0dip" 
+        android:textColor="@color/grey" 
+        android:gravity="center" 
+        android:id="@id/textViewEmpty" 
+        android:visibility="gone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:layout_weight="1.0" />
+    <TextView 
+        android:background="@color/big_divider" 
+        android:layout_width="fill_parent" 
+        android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>
+
+

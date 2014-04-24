@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_menu_surelogout">确定退出菠菜应用管理程序吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+</resources>

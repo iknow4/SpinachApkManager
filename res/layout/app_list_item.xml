@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    android:gravity="center_vertical" 
+    android:layout_gravity="center_vertical" 
+    android:background="@drawable/selector_list_item" 
+    android:paddingTop="6.0dip" 
+    android:paddingBottom="6.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView 
+        android:id="@id/app_icon" 
+        android:layout_width="40.0dip" 
+        android:layout_height="40.0dip" 
+        android:layout_marginLeft="8.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:layout_marginBottom="5.0dip" 
+        android:layout_alignParentLeft="true" />
+    <CheckBox 
+        android:id="@id/app_chk" 
+        android:focusable="false" 
+        android:clickable="false" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:checked="false" 
+        android:button="@drawable/selector_checkbox" 
+        android:layout_alignParentRight="true" />
+    <TextView 
+        android:textAppearance="?android:textAppearanceMedium" 
+        android:textColor="@color/dark" 
+        android:ellipsize="end" 
+        android:id="@id/app_name" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="60.0dip" 
+        android:maxWidth="200.0dip" 
+        android:singleLine="true" 
+        android:layout_toLeftOf="@id/app_chk" 
+        android:layout_toRightOf="@id/app_icon" />
+     <TextView 
+        android:textAppearance="?android:textAppearanceSmall" 
+        android:textColor="@color/install_text_green" 
+        android:gravity="right" 
+        android:id="@id/app_install" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="50.0dip" 
+        android:singleLine="true" 
+        android:layout_alignParentRight="true" />
+    <RelativeLayout 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_toLeftOf="@id/app_chk" 
+        android:layout_toRightOf="@id/app_icon" 
+        android:layout_below="@id/app_name">
+        <TextView android:textAppearance="?android:textAppearanceSmall" 
+            android:textColor="@color/grey" 
+            android:id="@id/app_version" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="60.0dip" 
+            android:singleLine="true" 
+            android:layout_alignParentLeft="true" />
+        <TextView 
+            android:textAppearance="?android:textAppearanceSmall" 
+            android:textColor="@color/grey" 
+            android:gravity="right" 
+            android:id="@id/app_mem" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="5.0dip" 
+            android:text="@string/install_text" 
+            android:singleLine="true" 
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

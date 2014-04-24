@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:background="@drawable/mainscreen_bg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView 
+        android:id="@id/show_detail_counter" 
+        style="@style/activity_divider" />
+    <ListView 
+        android:id="@id/move_list" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:listSelector="@drawable/list_line_pressed" 
+        android:layout_weight="1.0" 
+        style="@style/listview" />
+    <ListView 
+        android:id="@id/sdcard_list" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:listSelector="@drawable/list_line_pressed" 
+        android:layout_weight="1.0" 
+        style="@style/listview" />
+    <ListView 
+        android:id="@id/phone_list" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:listSelector="@drawable/list_line_pressed" 
+        android:layout_weight="1.0" 
+        style="@style/listview" />
+    <TextView 
+        android:textSize="18.0dip" 
+        android:textColor="@color/grey" 
+        android:gravity="center" 
+        android:id="@id/textViewEmpty" 
+        android:visibility="gone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:layout_weight="1.0" />
+    <TextView 
+        android:background="@color/big_divider" 
+        android:layout_width="fill_parent" 
+        android:layout_height="1.0dip" />
+    <RadioGroup 
+        android:gravity="center_vertical" 
+        android:layout_gravity="bottom" 
+        android:orientation="horizontal" 
+        android:id="@id/main_radio" 
+        android:background="@drawable/main_navigation_background" 
+        android:layout_width="fill_parent" 
+        android:layout_height="50.0dip">
+        <RadioButton 
+            android:id="@id/radio_button0" 
+            android:tag="radio_button0" 
+            android:paddingBottom="2.0dip" 
+            android:text="@string/analysis_tab_phone_text" 
+            android:drawableTop="@drawable/tab_phone" style="@style/main_tab_bottom" />
+        <RadioButton 
+            android:id="@id/radio_button1" 
+            android:tag="radio_button1" 
+            android:paddingBottom="2.0dip" 
+            android:text="@string/analysis_tab_sdcard_text" 
+            android:drawableTop="@drawable/tab_sd" 
+            style="@style/main_tab_bottom" />
+        <RadioButton 
+            android:id="@id/radio_button2" 
+            android:tag="radio_button2" 
+            android:paddingBottom="2.0dip" 
+            android:text="@string/analysis_tab_nomove_text" 
+            android:drawableTop="@drawable/tab_nomove" 
+            style="@style/main_tab_bottom" />
+    </RadioGroup>
+</LinearLayout>

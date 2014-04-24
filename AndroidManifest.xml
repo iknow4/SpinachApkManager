@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest 
+    android:versionCode="1" 
+    android:versionName="1.0.1 Beta1" 
+    android:installLocation="auto" package="com.spinach.apkmanager"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="17" />
+    <application 
+        android:label="@string/app_name" android:icon="@drawable/icon" android:debuggable="false"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.spinach.apkmanager.AppStart" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait" />
+        <activity android:name=".activity.InstalledAppActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ApkActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.AboutActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.ToSdCardActivity" android:screenOrientation="portrait" />
+         <activity android:name=".activity.ToRomActivity" android:screenOrientation="portrait" />
+         <activity android:name=".feedback.FeedbackActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".feedback.FeedbackRecordActivity"
+            	  android:theme="@android:style/Theme.NoTitleBar" />
+        <meta-data android:name="cooId" android:value="0d618f2e6ab1468fb8fa8fe40270fcab" />
+        <meta-data android:name="channelId" android:value="appchina" />
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+</manifest>
